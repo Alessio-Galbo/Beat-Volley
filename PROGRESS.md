@@ -1,9 +1,6 @@
 # Avanzamento — Beat Volley (aggiornato: 2026-10-14)
 
 ## Domande per te
-- **R1** (2026-10-14) Come sincronizzare iTunes preview ed LRCLIB? → Svincolato il gioco dallo streaming obbligatorio: Blind Test audio con schermo censurato (30s) + prompter karaoke per testi a mente.
-- **R2** (2026-10-14) Come gestire la prospettiva e le modalità? → Vista laterale aerea simmetrica (rete al centro, Squadra A a sinistra / Squadra B a destra) in arena da pallavolo completa.
-- **D1** (2026-10-14) Decisione presa: Grafica ad alta definizione in stile anime sportivo anni '80 (arena con parquet e spalti, rete professionale isolata, atleti illustrati orientati verso la rete) + audio Web Audio API.
 
 ## Ora
 - [ ] Risoluzione HiDPI/Fullscreen nativa (1080p) e correzione angolatura rete a 85°-90° allineata alla mezzeria del campo — `web/` — IN LAVORAZIONE: Antigravity (Gemini) dal 2026-10-14 22:58
