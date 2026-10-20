@@ -2,7 +2,20 @@
 
 Tutte le modifiche tecniche documentate con file e prove.
 
-## [Non rilasciato] — 2026-10-14
+## [Non rilasciato] — 2026-10-19
+
+### Grafica, Rendering & Prospettiva
+- Supporto a doppia prospettiva commutabile: **Vista Inclinata 85°** (`web/assets/court/arena_background_85deg.jpg` e `volleyball_net_85deg.png`) con maglie della rete visibili e seggiolone, e **Vista Laterale Ortogonale 90°** (`arena_background.jpg` e `volleyball_net_90deg.png`) perfettamente allineata alla mezzeria.
+- Memorizzazione automatica della prospettiva preferita in `localStorage` (`beat_volley_view`).
+- Risoluzione nativa Full HD 1920x1080 con supporto HiDPI, rimozione totale di sgranature a schermo intero tramite regole CSS `:fullscreen` con `object-fit: contain` (`web/css/canvas.css`).
+- Pulizia totale del canale alfa e rimozione dello spill verde da tutti gli sprite (`female_ready.png`, `male_ready.png`, `volleyball_net_85deg.png`, `volleyball_net_90deg.png`).
+- Aggiunta sprite d'azione in elevazione ad alta definizione: Schiacciata (`female_spike.png`) e Muro a rete (`male_block.png`).
+- Creazione del modulo dedicato `web/js/athlete_renderer.js` per proporzioni native, ombra sul parquet che scala con l'elevazione e specchiatura orizzontale.
+- Coerenza visiva al 100% tra gli avatar HUD (`web/assets/avatars/avatar_atleta1.png`, `avatar_atleta2.png`) e i volti degli atleti in campo.
+- Generazione favicon per eliminare errori 404 in console (`web/favicon.ico`).
+- Verifica visiva automatizzata headless Chrome CDP con 0 errori in console e 4 screenshot di prova.
+
+## [Precedente] — 2026-10-14
 
 ### Documentazione & Architettura
 - Creazione `docs/framework_web_games_serverless.md`: blueprint architetturale riutilizzabile per giochi serverless su GitHub Pages (NetworkAdapter, FSM, Zero-Cost Media, CGNAT resilience).
