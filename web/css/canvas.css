@@ -1,0 +1,17 @@
+/* Regole per il Canvas di gioco: aspect-ratio e visualizzazione a schermo intero nativa */
+canvas#courtCanvas {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: #0b1329;
+  border-radius: 8px;
+  display: block;
+}
+
+canvas#courtCanvas:fullscreen {
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  background: #000;
+  border-radius: 0;
+}

@@ -1,0 +1,63 @@
+<!-- Banco di prova: Arena anime 80s con visuale 85/90 gradi, rete con arbitro, atleti ad alta definizione -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beat Volley — Arena Anime 80s &amp; Rete</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/canvas.css">
+  <link rel="stylesheet" href="css/test_assets.css">
+</head>
+<body>
+  <header>
+    <h1>Beat Volley</h1>
+    <p class="subtitle">Arena Anime 80s (85° / 90°), Rete Professionale &amp; Atleti Modulari</p>
+  </header>
+
+  <main class="dashboard">
+    <!-- Scheda 1: Controlli, Audio, Visuale e Schermo Intero -->
+    <section class="card">
+      <h2>Avatar Profilo / HUD Coerenti</h2>
+      <div class="avatar-grid">
+        <div class="avatar-item">
+          <img src="assets/avatars/avatar_atleta1.png" alt="Atleta 1">
+          <span class="role">Schiacciatrice</span>
+          <span class="name">Atleta 1</span>
+        </div>
+        <div class="avatar-item">
+          <img src="assets/avatars/avatar_atleta2.png" alt="Atleta 2">
+          <span class="role">Palleggiatore</span>
+          <span class="name">Atleta 2</span>
+        </div>
+      </div>
+
+      <h2>Controlli Prospettiva &amp; Pose</h2>
+      <button id="btnToggleView" class="btn-accent" style="width: 100%; margin-bottom: 8px;">Visuale: Inclinata 85° (Clicca per 90°)</button>
+      <div class="btn-group">
+        <button id="btnSpike">Schiacciata &amp; Muro 🏐</button>
+        <button id="btnHit">Colpo Bagher</button>
+      </div>
+
+      <h2 style="margin-top: 12px;">Audio &amp; Schermo Intero</h2>
+      <div class="btn-group">
+        <button id="btnWhistle">Fischietto</button>
+        <button id="btnBeat">Beat 115 BPM</button>
+      </div>
+      <button id="btnFullscreen" style="width: 100%; margin-top: 8px;">Schermo Intero Arena ⛶</button>
+    </section>
+
+    <!-- Scheda 2: Arena Completa & Partita -->
+    <section class="card">
+      <h2>Stadio Anime 80s &amp; Scambio Pallavolo</h2>
+      <canvas id="courtCanvas" width="1920" height="1080"></canvas>
+      <p class="subtitle" style="margin-top: 8px;">
+        Palestra con parquet, rete con seggiolone, Atleta 1 (sinistra) e Atleta 2 (destra) rivolti alla rete.
+      </p>
+    </section>
+  </main>
+
+  <script type="module" src="js/test_app.js"></script>
+</body>
+</html>
